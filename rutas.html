@@ -1,25 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>greenclycing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas - Greencycling</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Nuestras rutas de recuperación</h1>
-    <p>
-        En las siguientes imágenes pueden observar las rutas que recorremos para recuperar el material aprovechable proveniente de los hogares de Medellín.
+    <!-- Encabezado con el título y el icono del menú -->
+    <header>
+        <h1 class="title">
+            <a href="index.html" class="title-link">Greencycling</a>
+        </h1>
+        <div class="icon" onclick="toggleMenu()">☰</div>
+        <!-- Menú desplegable -->
+        <nav class="menu" id="dropdown-menu">
+            <a href="ccu.html">CCU</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="materiales.html">Materiales</a>
+            <a href="pqrs.html">PQRS</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
 
-    </p>
-    <a href="index.html">Volver a Inicio
+    <!-- Sección de Rutas -->
+    <main class="container">
+        <section class="routes-section">
+            <h2 class="subtitle">Nuestra ruta de recuperación</h2>
+            <p>
+                En las siguientes imágenes pueden observar las rutas que recorremos para recuperar el material aprovechable proveniente de los hogares de Medellín.
+            </p>
+            <!-- Imagen de la ruta -->
+            <div class="image-container">
+                <img src="ruta-recuperacion.png" alt="Ruta de recuperación" class="route-image">
+            </div>
+        </section>
+    </main>
 
-    </a>
-    
+    <!-- Script para el funcionamiento del menú desplegable -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdown-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
-
-
-
-
-
-
 </html>
