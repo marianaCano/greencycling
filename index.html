@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>greenclycing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Greencycling</title>
+    <!-- Enlaces a Google Fonts para la tipografía Playfair Display y Lato -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Inicio</h1>
-    <p>
-        Todo lo que necesitas saber de reciclaje está aquí
-    </p>
-    <a href="rutas.html">Rutas</a>
-    <a href="sobre_nosotros.html">Sobre Nosotros</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="materiales.html">Materiales</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="pqrs.html">Canal de PQRS</a>
-    <a href="ccu.html">Contrato de Condiciones Uniformes</a>
-    <a href="tips.html">Tips</a>
+    <!-- Encabezado con el título y el icono del menú -->
+    <header>
+        <h1 class="title">
+            <a href="index.html" class="title-link">Greencycling</a>
+        </h1>
+        <div class="icon" onclick="toggleMenu()">☰</div>
+        <!-- Menú desplegable -->
+        <nav class="menu" id="dropdown-menu">
+            <a href="ccu.html">CCU</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="materiales.html">Materiales</a>
+            <a href="pqrs.html">PQRS</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <main class="container">
+        <section class="welcome-section">
+            <h2 class="subtitle">Todo lo que necesitas saber de reciclaje está aquí</h2>
+            <div class="content">
+                <!-- Imagen pequeña en el lado izquierdo -->
+                <div class="image-container">
+                    <img src="https://i.pinimg.com/originals/b9/0d/5f/b90d5f568bbdc17f82ad89a755c4c9f5.jpg" alt="Ícono de reciclaje pequeño" class="small-image">
+                </div>
+                <!-- Texto de bienvenida en el lado derecho -->
+                <div class="text-container">
+                    <p>
+                        Bienvenido a Greencycling, somos prestadores del servicio público de aseo en el componente de aprovechamiento en el municipio de Medellín. 
+                        En esta página podrás encontrar toda nuestra información y el trabajo que realizamos en la ciudad, además de distintos tips y consejos para la separación de los residuos sólidos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script para el funcionamiento del menú desplegable -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdown-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
-
-
-
-
-
-
 </html>

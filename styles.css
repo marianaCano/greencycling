@@ -1,138 +1,162 @@
-/* Estilos generales */
+/* Tipografía y estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #ffffff;
-}
-
-.titulo {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Estilos del menú desplegable */
-#dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 1000;
-}
-
-#dropdown-menu.show {
-    display: block;
-}
-
-#dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#dropdown-menu li {
-    border-bottom: 1px solid #ddd;
-}
-
-#dropdown-menu li:last-child {
-    border-bottom: none;
-}
-
-#dropdown-menu li a {
-    display: block;
-    padding: 10px 20px;
+    line-height: 1.6;
     color: #333;
-    text-decoration: none;
 }
 
-#dropdown-menu li a:hover {
-    background-color: #f4f4f4;
+h1, .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
 }
 
-/* Sección de información (Misión y Visión) */
-.info-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #5a8d55;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Contenedor principal para la sección de bienvenida */
+.welcome-section {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    text-align: left;
 }
 
-.text-container {
-    flex: 1;
-}
-
-.text-container h2 {
-    font-size: 24px;
-    margin-top: 0;
-}
-
-.quote {
-    border-left: 3px solid #ccc;
-    padding-left: 15px;
-    color: #555;
-    font-style: italic;
-}
-
-.image-container {
-    flex: 1;
+/* Estructura de la imagen y el texto */
+.content {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-.image-container img {
-    width: 150px;
+.small-image {
+    width: 100px;
     height: auto;
 }
 
-/* Adaptabilidad para pantallas de tablet y móvil */
+.text-container p {
+    font-size: 1.1em;
+    margin: 0;
+    color: #333;
+}
+
+/* Contenedor general para el contenido */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+/* Estilos para el título */
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Estilo de enlace del título */
+.title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos del menú desplegable */
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu a {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: #5a8d55;
+}
+
+/* Icono del menú (hamburguesa) */
+.icon {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Clase .show para mostrar el menú desplegable */
+.show {
+    display: flex;
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
-    .info-section {
+    .content {
         flex-direction: column;
+        text-align: center;
     }
 
-    .image-container {
+    .small-image {
+        margin-bottom: 15px;
+    }
+
+    .image {
+        max-width: 80%;
+        margin: 20px 0;
+    }
+
+    /* Icono del menú en móviles */
+    .icon {
         margin-top: 20px;
     }
-
-    #dropdown-menu {
-        width: 100%;
-        top: 0;
-        right: 0;
-    }
-
-    .menu-icon {
-        font-size: 28px;
-    }
 }
 
-@media (max-width: 480px) {
-    .titulo {
-        font-size: 20px;
-    }
-
-    .text-container h2 {
-        font-size: 20px;
-    }
-
-    .image-container img {
-        width: 120px;
-    }
-}
