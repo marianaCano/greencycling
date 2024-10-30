@@ -1,176 +1,151 @@
-/* Tipografía y estilos generales */
+/* Estilos generales */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
+    font-size: 16px;
 }
 
-h1, .title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    margin: 0;
-    color: #333;
-}
-
-.subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    text-align: center;
-    color: #5a8d55;
-    margin-top: 20px;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em;
-    color: #333;
-}
-
-p {
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 1em;
-}
-
-/* Contenedor principal para la sección de bienvenida */
-.welcome-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-
-/* Estructura de la imagen y el texto */
-.content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.small-image {
-    width: 400px;
-    height: auto;
-}
-
-.text-container p {
-    font-size: 1.1em;
-    margin-top: 100px;
-    color: #333;
-}
-
-/* Contenedor general para el contenido */
 .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
+    background-color: #fff;
+    position: relative;
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.image {
-    max-width: 300px;
-    margin-left: 20px;
-}
-
-/* Estilos para el título */
-.title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    margin-left: 20px;
-}
-
-/* Estilo de enlace del título */
+/* Ajuste del título "Greencycling" */
 .title-link {
+    color: #333;
     text-decoration: none;
-    color: inherit;
+    font-size: 1.2em; /* Tamaño reducido */
+    margin-top: -50px; /* Mueve el título 50px hacia arriba */
 }
 
-/* Estilos del menú desplegable */
+.icon {
+    font-size: 1.3em;
+    color: #333;
+    cursor: pointer;
+}
+
 .menu {
     display: none;
-    flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 20px;
+    top: 50px;
+    right: 15px;
     background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    z-index: 1000;
 }
 
 .menu a {
-    font-family: 'Lato', sans-serif;
     color: #333;
-    text-decoration: none;
-    padding: 10px;
+    padding: 8px 15px;
     display: block;
-    font-weight: 700;
+    font-size: 0.9em;
+    text-decoration: none;
 }
 
 .menu a:hover {
-    color: #5a8d55;
+    background-color: #f0f0f0;
 }
 
-/* Icono del menú (hamburguesa) */
-.icon {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-/* Clase .show para mostrar el menú desplegable */
 .show {
+    display: block;
+}
+
+/* Estilos para la sección de servicios */
+.services-section {
     display: flex;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .small-image {
-        margin-bottom: 15px;
-    }
-
-    .image {
-        max-width: 80%;
-        margin: 20px 0;
-    }
-
-    /* Icono del menú en móviles */
-    .icon {
-        margin-top: 20px;
-    }
-}
-.routes-section {
-    max-width: 1200px;
+    gap: 15px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text-container {
+    flex: 1;
+    font-size: 1em;
+}
+
+.text-container ul {
+    list-style-type: disc;
+    margin: 8px 0;
+    padding-left: 18px;
+}
+
+/* Estilos para el botón de contacto */
+.contact-button {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-button a {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #25D366;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-button a:hover {
+    background-color: #128c7e;
+}
+
+/* Estilos para la sección de rutas */
+.routes-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
     text-align: center;
 }
 
 .route-image {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 15px;
     border-radius: 5px;
 }
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container,
+    .text-container {
+        flex: 1;
+        width: 100%;
+    }
+
+    .service-image {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
 
 
