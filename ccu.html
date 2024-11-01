@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>greenclycing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCU - Greencycling</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Contrato de Condiciones Uniformes</h1>
-    <p>
-        Bienvenido a nuestra plataforma dedicada a la transparencia y confianza! Aquí puedes acceder al contrato de condiciones uniformes que regirá nuestra relación comercial. Estamos comprometidos en asegurar que nuestros servicios se rijan por estándares claros y equitativos, promoviendo así una colaboración basada en principios de justicia y responsabilidad mutua. Te invitamos a revisar el contrato detenidamente y estamos a tu disposición para cualquier consulta adicional que puedas tener.
-    </p>
-    <a href="index.html">Volver al Inicio
+    <!-- Encabezado con título y menú -->
+    <header>
+        <a href="index.html" class="title-link">Greencycling</a>
+        <span class="icon" onclick="toggleMenu()">☰</span>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="materiales.html">Materiales</a>
+            <a href="ccu.html">CCU</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-    </a>
+    <!-- Contenedor principal de CCU -->
+    <div class="container">
+        <h1>Contrato de Condiciones Uniformes</h1>
+        <p>¡Bienvenido a nuestra plataforma dedicada a la transparencia y confianza! Aquí puedes acceder al contrato de condiciones uniformes que regirá nuestra relación comercial. Estamos comprometidos en asegurar que nuestros servicios se rijan por estándares claros y equitativos, promoviendo así una colaboración basada en principios de justicia y responsabilidad mutua. Te invitamos a revisar el contrato detenidamente y estamos a tu disposición para cualquier consulta adicional que puedas tener.</p>
+        <div class="ccu-image">
+            <img src="https://t3.ftcdn.net/jpg/02/26/42/06/360_F_226420649_vlXjp3JyUrnW5EHY00dvhbqkVdUfyafj.jpg" alt="Contrato de condiciones uniformes">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
-
-
-
-
-
-
 </html>

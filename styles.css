@@ -175,6 +175,76 @@ button:hover {
         width: 100%;
     }
 }
+/* Estilos para la página CCU */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.ccu-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* Estilos para la página de Contacto */
+.container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.map-section {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-section,
+    .contact-info {
+        width: 100%;
+    }
+}
 
 
 
