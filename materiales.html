@@ -1,24 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>greenclycing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiales - Greencycling</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Materiales</h1>
-    <p>
-        ¿Qué tipo de materiales aprovechamos?
-        Aprovechamos materiales como el papel, cartón, plástico, pet y vidrio.
-    </p>
-    <a href="index.html">Volver al Inicio
+    <!-- Encabezado con título y menú -->
+    <header>
+        <a href="index.html" class="title-link">Greencycling</a>
+        <span class="icon" onclick="toggleMenu()">☰</span>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="materiales.html">Materiales</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-    </a>
+    <!-- Contenedor principal de Materiales -->
+    <div class="container">
+        <h1>Materiales que Reciclamos</h1>
+        <div class="materials-grid">
+            <div class="material-item">
+                <img src="https://i.pinimg.com/564x/a1/81/d1/a181d16a146e7b002879f2064e74f4e1.jpg" alt="Papel">
+                <h2>Papel</h2>
+                <div class="tooltip">Revistas, hojas de cuaderno, periódicos</div>
+            </div>
+            <div class="material-item">
+                <img src="https://i.pinimg.com/564x/e9/96/b0/e996b099d5f141c9c18684d4af7b6448.jpg" alt="Cartón">
+                <h2>Cartón</h2>
+                <div class="tooltip">Cajas de cartón, envases de cereales</div>
+            </div>
+            <div class="material-item">
+                <img src="https://i.pinimg.com/564x/75/5e/39/755e39a478af5f611b8214ffa9cb4f17.jpg" alt="Plástico">
+                <h2>Plástico</h2>
+                <div class="tooltip">Botellas, bolsas, envases de comida</div>
+            </div>
+            <div class="material-item">
+                <img src="https://i.pinimg.com/564x/21/2c/c1/212cc17d480ceb4912fe2d5a105b16e4.jpg" alt="Vidrio">
+                <h2>Vidrio</h2>
+                <div class="tooltip">Frascos, botellas de vidrio, vasos</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
-
-
-
-
-
-
 </html>
+
+
