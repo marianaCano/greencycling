@@ -1,23 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>greenclycing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQRS - Greencycling</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>PQRS</h1>
-    <p>
-        Canal de PQRS
-    </p>
-    <a href="index.html">Volver al Inicio
+    <!-- Encabezado con título y menú -->
+    <header>
+        <a href="index.html" class="title-link">Greencycling</a>
+        <span class="icon" onclick="toggleMenu()">☰</span>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="materiales.html">Materiales</a>
+            <a href="ccu.html">CCU</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="pqrs.html">PQRS</a>
+        </nav>
+    </header>
 
-    </a>
+    <!-- Contenedor del formulario de PQRS -->
+    <div class="pqrs-container">
+        <h2>Canal de PQRS</h2>
+        <form class="pqrs-form">
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="asunto">Asunto*</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
-
-
-
-
-
-
 </html>

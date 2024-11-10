@@ -11,7 +11,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50;
     position: relative;
 }
 
@@ -245,6 +244,99 @@ button:hover {
         width: 100%;
     }
 }
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.title-link {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: none; /* Oculto por defecto */
+}
+
+.menu.show {
+    display: block;
+}
+
+/* Contenedor del formulario de PQRS */
+.pqrs-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.pqrs-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de PQRS */
+.pqrs-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pqrs-form label {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada y área de texto */
+.pqrs-form input[type="text"],
+.pqrs-form input[type="email"],
+.pqrs-form input[type="tel"],
+.pqrs-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 0; /* Sin bordes redondeados */
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para cada campo */
+.pqrs-form input[type="text"],
+.pqrs-form input[type="email"],
+.pqrs-form input[type="tel"] {
+    height: 40px;
+}
+
+.pqrs-form textarea {
+    height: 80px;
+    resize: none; /* Desactiva el cambio de tamaño del textarea */
+}
+
+/* Estilo del botón de envío */
+.pqrs-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid black;
+    font-size: 1em;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.pqrs-form button:hover {
+    background-color: #555;
+}
+
 
 
 
