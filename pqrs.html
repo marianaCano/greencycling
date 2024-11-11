@@ -8,21 +8,27 @@
 </head>
 <body>
     <!-- Encabezado con título y menú -->
+    <!-- Encabezado con el título y el icono del menú -->
     <header>
-        <a href="index.html" class="title-link">Greencycling</a>
-        <span class="icon" onclick="toggleMenu()">☰</span>
-        <nav class="menu">
-            <a href="index.html">Inicio</a>
+        <h1 class="title">
+            <a href="index.html" class="title-link">Greencycling</a>
+        </h1>
+
+        <!-- Checkbox para activar el menú -->
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="icon" onclick="toggleMenu()">&#9776;</label>
+
+        <!-- Menú desplegable -->
+        <nav class="menu" id="dropdown-menu">
+            <a href="ccu.html">CCU</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="materiales.html">Materiales</a>
+            <a href="pqrs.html">PQRS</a>
             <a href="rutas.html">Rutas</a>
             <a href="servicios.html">Servicios</a>
-            <a href="materiales.html">Materiales</a>
-            <a href="ccu.html">CCU</a>
             <a href="sobre-nosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="pqrs.html">PQRS</a>
         </nav>
     </header>
-
     <!-- Contenedor del formulario de PQRS -->
     <div class="pqrs-container">
         <h2>Canal de PQRS</h2>

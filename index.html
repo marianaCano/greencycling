@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Encabezado con el título y el icono del menú -->
     <header>
         <h1 class="title">
             <a href="index.html" class="title-link">Greencycling</a>
         </h1>
-        <div class="icon" onclick="toggleMenu()">☰</div>
+
+        <!-- Checkbox para activar el menú -->
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="icon" onclick="toggleMenu()">&#9776;</label>
+
         <!-- Menú desplegable -->
         <nav class="menu" id="dropdown-menu">
             <a href="ccu.html">CCU</a>
@@ -24,7 +30,6 @@
             <a href="rutas.html">Rutas</a>
             <a href="servicios.html">Servicios</a>
             <a href="sobre-nosotros.html">Sobre Nosotros</a>
-            
         </nav>
     </header>
 
@@ -35,13 +40,16 @@
             <div class="content">
                 <!-- Imagen pequeña en el lado izquierdo -->
                 <div class="image-container">
-                    <img src="https://i.pinimg.com/originals/b9/0d/5f/b90d5f568bbdc17f82ad89a755c4c9f5.jpg" alt="Ícono de reciclaje pequeño" class="small-image">
+                    <img src="https://i.pinimg.com/originals/b9/0d/5f/b90d5f568bbdc17f82ad89a755c4c9f5.jpg"
+                        alt="Ícono de reciclaje pequeño" class="small-image">
                 </div>
                 <!-- Texto de bienvenida en el lado derecho -->
                 <div class="text-container">
                     <p>
-                        Bienvenido a Greencycling, somos prestadores del servicio público de aseo en el componente de aprovechamiento en el municipio de Medellín. 
-                        En esta página podrás encontrar toda nuestra información y el trabajo que realizamos en la ciudad, además de distintos tips y consejos para la separación de los residuos sólidos.
+                        Bienvenido a Greencycling, somos prestadores del servicio público de aseo en el componente de
+                        aprovechamiento en el municipio de Medellín.
+                        En esta página podrás encontrar toda nuestra información y el trabajo que realizamos en la
+                        ciudad, además de distintos tips y consejos para la separación de los residuos sólidos.
                     </p>
                 </div>
             </div>
@@ -56,4 +64,5 @@
         }
     </script>
 </body>
+
 </html>
