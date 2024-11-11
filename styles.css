@@ -151,16 +151,50 @@ p {
         transform: translateY(0);
     }
 }
-
+.services-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+/* Imagen de servicios */
+.service-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 /* Estilos para otras páginas */
 .services-container {
     display: flex;
     gap: 20px;
 }
 
-.services-container img {
-    width: 50%;
-    border-radius: 10px;
+/* Responsividad */
+@media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    .text-container ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .contact-button a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
 
 .services-content {
@@ -267,6 +301,88 @@ button:hover {
     .map-section iframe {
         width: 100%;
         height: 300px;
+    }
+}
+/* Contenedor principal para PQRS */
+.pqrs-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección */
+.pqrs-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Estilos del formulario */
+.pqrs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas de los campos */
+.pqrs-form label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Campos de entrada (input y textarea) */
+.pqrs-form input,
+.pqrs-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Estilo para el textarea */
+.pqrs-form textarea {
+    resize: vertical;
+}
+
+/* Botón de enviar */
+.pqrs-form button {
+    padding: 12px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover en el botón */
+.pqrs-form button:hover {
+    background-color: #005700;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .pqrs-container {
+        padding: 15px;
+    }
+
+    .pqrs-form label,
+    .pqrs-form input,
+    .pqrs-form textarea {
+        font-size: 1rem;
+    }
+
+    .pqrs-form button {
+        font-size: 1rem;
     }
 }
 
