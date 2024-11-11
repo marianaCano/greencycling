@@ -271,70 +271,98 @@ header {
     display: block;
 }
 
-/* Contenedor del formulario de PQRS */
-.pqrs-container {
-    max-width: 500px;
-    margin: 50px auto;
+/* Estilos generales para mantener consistencia */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header img {
+    width: 100px; /* Tamaño de logo ajustable */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Título de la página */
+h1 {
     text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 20px;
 }
 
-.pqrs-container h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-/* Estilos para el formulario de PQRS */
-.pqrs-form {
+/* Estilo del formulario de PQRS */
+form {
+    max-width: 600px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-.pqrs-form label {
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-/* Estilos para los campos de entrada y área de texto */
-.pqrs-form input[type="text"],
-.pqrs-form input[type="email"],
-.pqrs-form input[type="tel"],
-.pqrs-form textarea {
+/* Estilo de los campos del formulario */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 0; /* Sin bordes redondeados */
-    font-size: 1em;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
-/* Estilos específicos para cada campo */
-.pqrs-form input[type="text"],
-.pqrs-form input[type="email"],
-.pqrs-form input[type="tel"] {
-    height: 40px;
-}
-
-.pqrs-form textarea {
-    height: 80px;
-    resize: none; /* Desactiva el cambio de tamaño del textarea */
-}
-
-/* Estilo del botón de envío */
-.pqrs-form button {
-    padding: 10px 20px;
+/* Estilo para el botón */
+form button {
+    width: 100px;
+    padding: 10px;
     background-color: #333;
     color: #fff;
-    border: 2px solid black;
-    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
-.pqrs-form button:hover {
+form button:hover {
     background-color: #555;
+}
+
+/* Etiquetas de los campos */
+label {
+    font-weight: bold;
+}
+
+/* Ajustes para tamaños de pantalla pequeños */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
 
 
